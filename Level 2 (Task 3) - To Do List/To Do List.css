@@ -1,0 +1,106 @@
+*
+{
+  font-family: 'Lucida Calligraphy', cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  background-image: linear-gradient(120deg, tan 0%, lightblue 100%);
+  color: black;
+  min-height: 150vh;
+}
+h1
+{
+  display: flex;
+  margin-left: 600px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+form
+{
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input, form button
+{
+  padding: 10px;
+  font-size: 30px;
+  border: none;
+  background: white;
+}
+form button
+{
+  color: indianred;
+  background: papayawhip;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover
+{
+  background: lightcoral;
+  color: white;
+}
+.todo-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-list
+{
+  min-width: 30%;
+  list-style: none;
+}
+.todo
+{
+  margin: 0.5rem;
+  background: white;
+  font-size: 1.5rem;
+  color: forestgreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+}
+.filter-todo
+{
+  padding: 1rem;
+}
+.todo li
+{
+  flex: 1;
+}
+.trash-btn, .complete-btn
+{
+  background: floralwhite;
+  color: darkblue;
+  border: none;
+  padding: 2rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.complete-btn
+{
+  background: antiquewhite;
+  color: darkred;
+}
+.fa-trash, .fa-check
+{
+  pointer-events: none;
+}
+.fall
+{
+  transform: translateZ(10rem) rotateY(10deg);
+  opacity: 0;
+}
+.completed
+{
+  text-decoration: line-through;
+  opacity: 1;
+}
